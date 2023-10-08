@@ -3,8 +3,19 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+
 
 const Login = () => {
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+    const googleLogin = () => {
+        signInWithPopup(auth, provider)
+            .then(res => console.log(res))
+            .catch(error => console.log(error))
+    }
+
+
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -68,6 +79,9 @@ const Login = () => {
                         )}
                         <div className="mb-6">
                             <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
+                        </div>
+                        <div className="mb-6">
+                            <button onClick={googleLogin} type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Google</button>
                         </div>
                     </form>
                     <p className="text-gray-600 text-sm text-center">Don't have an account? <a href="/register" className="text-blue-500">Register</a></p>
