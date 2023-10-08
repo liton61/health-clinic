@@ -34,14 +34,14 @@ const Navbar = () => {
                         >
                             Doctors
                         </NavLink></li>
-                        <li className='mx-2'><NavLink
+                        {/* <li className='mx-2'><NavLink
                             to="/register"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
                             }
                         >
                             Register
-                        </NavLink></li>
+                        </NavLink></li> */}
                     </ul>
                 </div>
                 <div className="navbar-start">
@@ -66,14 +66,14 @@ const Navbar = () => {
                     >
                         Doctors
                     </NavLink></li>
-                    <li className='mx-2'><NavLink
+                    {/* <li className='mx-2'><NavLink
                         to="/register"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }
                     >
                         Register
-                    </NavLink></li>
+                    </NavLink></li> */}
                 </ul>
             </div>
             <div className="navbar-end">

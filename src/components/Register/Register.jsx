@@ -7,10 +7,12 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
     const handleRegister = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+
         if (password.length < 6) {
             return Swal.fire({
                 position: 'top-end',
@@ -18,23 +20,44 @@ const Register = () => {
                 title: 'Password must be at least 6 characters !',
                 showConfirmButton: false,
                 timer: 1500
-            })
+            });
         }
-        createUser(email, password)
-            .then(res => console.log(res))
-        if (createUser) {
-            Swal.fire({
+
+        if (/[A-Z]/.test(password)) {
+            return Swal.fire({
                 position: 'top-end',
-                icon: 'success',
-                title: 'Your have successfully registration !',
+                icon: 'error',
+                title: 'Password must not contain capital letters !',
                 showConfirmButton: false,
                 timer: 1500
-            })
+            });
         }
-        navigate(location?.state ? location.state : '/')
-            .catch(error => console.log(error))
 
-    }
+        if (/[^A-Za-z0-9]/.test(password)) {
+            return Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Password must not contain special characters !',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+        createUser(email, password)
+            .then(res => {
+                console.log(res);
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'You have successfully registered!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                navigate(location?.state ? location.state : '/')
+                    .catch(error => console.log(error))
+            })
+            .catch(error => console.log(error));
+    };
     return (
         <div>
             <div className="bg-gray-100 flex items-center justify-center h-screen">
