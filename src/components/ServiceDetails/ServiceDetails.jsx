@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 const ServiceDetails = ({ detail }) => {
-    const { id, title,name, fee,time,contact, button, short_description, image,designation } = detail || {};
+    const { id, title, name, fee, time, contact, button, short_description, image, designation } = detail || {};
     return (
         <div>
             <h1 className="text-center mt-5 text-4xl font-bold border-b-4 border-indigo-500 w-72 mx-auto">Service Details</h1>
@@ -22,10 +22,10 @@ const ServiceDetails = ({ detail }) => {
                                     {name}
                                 </h6>
                                 <h6 class="block font-sans text-sm font-semibold leading-relaxed tracking-normal text-pink-500 antialiased">
-                                {designation}
+                                    {designation}
                                 </h6>
                                 <h6 class="mb-4 block font-sans text-sm font-semibold leading-relaxed tracking-normal text-pink-500 antialiased">
-                                Contact : {contact}
+                                    Contact : {contact}
                                 </h6>
                             </div>
                             <div>

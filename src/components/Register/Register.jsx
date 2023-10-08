@@ -16,7 +16,7 @@ const Register = () => {
         <div>
             <div className="bg-gray-100 flex items-center justify-center h-screen">
                 <div className="bg-white w-96 p-8 rounded-lg shadow-lg">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">Register</h2>
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Register</h2>
                     <form onSubmit={handleRegister}>
                         <div className="mb-4">
                             <label className="block text-gray-600 text-sm font-medium mb-2">Full Name</label>
