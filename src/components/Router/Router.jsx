@@ -6,6 +6,7 @@ import Register from '../Register/Register';
 import Details from '../Details/Details';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Doctors from '../Doctors/Doctors';
+import Nurses from '../Nurses/Nurses';
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
                 path: "/doctors",
                 element: <PrivateRoute><Doctors></Doctors></PrivateRoute>,
                 loader: () => fetch('/doctor.json')
+            },
+            {
+                path: "/nurses",
+                element: <PrivateRoute><Nurses></Nurses></PrivateRoute>,
+                loader: () => fetch('/nurse.json')
             },
             {
                 path: "/details/:id",

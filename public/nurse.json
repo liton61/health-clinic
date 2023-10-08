@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "name": "Nurse Alice",
+      "designation": "Registered Nurse",
+      "img": "https://i.postimg.cc/5NHsJ6Dv/01.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nurse Bob",
+      "designation": "Licensed Practical Nurse",
+      "img": "https://i.postimg.cc/yNKj0nxX/02.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nurse Carol",
+      "designation": "Certified Nursing Assistant",
+      "img": "https://i.postimg.cc/V6LFV6jJ/03.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nurse David",
+      "designation": "Nurse Practitioner",
+      "img": "https://i.postimg.cc/02Lcy9q4/04.webp"
+    },
+    {
+      "id": 5,
+      "name": "Nurse Emily",
+      "designation": "Operating Room Nurse",
+      "img": "https://i.postimg.cc/mgCVcKLg/05.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Nurse Frank",
+      "designation": "Pediatric Nurse",
+      "img": "https://i.postimg.cc/jjhXcNJV/06.jpg"
+    }
+  ]
+  
+  
