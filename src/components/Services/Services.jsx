@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Services = ({ data }) => {
-    const { id, name, price, button, short_description, image } = data;
+    const { id,title,rating, name, price, button, short_description, image } = data;
     return (
         <div>
             <div className="relative flex w-96 mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -16,11 +16,11 @@ const Services = ({ data }) => {
                 </div>
                 <div className="p-6">
                     <div className="mb-2 flex items-center justify-between">
-                        <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
-                            {name}
+                        <p className="block font-sans text-lg font-medium leading-relaxed text-blue-gray-900 antialiased">
+                            {title}
                         </p>
                         <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
-                            {price}
+                            Rating : {rating}
                         </p>
                     </div>
                     <p className="block text-justify font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">

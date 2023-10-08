@@ -1,4 +1,4 @@
-import banner1 from '../../assets/01.jpg';
+import banner1 from '../../assets/01.avif';
 import banner2 from '../../assets/02.jpg';
 import banner3 from '../../assets/03.jpg';
 import banner4 from '../../assets/04.jpg';

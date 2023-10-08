@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.postimg.cc/V6WW4Kxs/d1.webp",
+        "name": "Dr. John Smith",
+        "designation": "Ophthalmologist"
+    },
+    {
+        "id": 2,
+        "img": "https://i.postimg.cc/YqqbDw25/d2.jpg",
+        "name": "Dr. Emily Johnson",
+        "designation": "Optometrist"
+    },
+    {
+        "id": 3,
+        "img": "https://i.postimg.cc/rmMpGjG9/d3.jpg",
+        "name": "Dr. Michael Davis",
+        "designation": "Pediatric Ophthalmologist"
+    },
+    {
+        "id": 4,
+        "img": "https://i.postimg.cc/FRpHTSDX/d4.webp",
+        "name": "Dr. Sarah Brown",
+        "designation": "Corneal Specialist"
+    },
+    {
+        "id": 5,
+        "img": "https://i.postimg.cc/SRtNhpBZ/d5.jpg",
+        "name": "Dr. David Wilson",
+        "designation": "Glaucoma Specialist"
+    },
+    {
+        "id": 6,
+        "img": "https://i.postimg.cc/h4CGx9X9/d6.webp",
+        "name": "Dr. Jennifer Lee",
+        "designation": "Retinal Specialist"
+    }
+]

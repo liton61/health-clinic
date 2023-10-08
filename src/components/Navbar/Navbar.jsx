@@ -28,12 +28,12 @@ const Navbar = () => {
                 </ul>
                 <ul className="menu menu-horizontal px-1 text-lg font-semibold">
                     <li><NavLink
-                        to="/mentors"
+                        to="/doctors"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }
                     >
-                        Mentors
+                        Doctors
                     </NavLink></li>
                 </ul>
                 <ul className="menu menu-horizontal px-1 text-lg font-semibold">

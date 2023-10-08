@@ -5,7 +5,7 @@ import Login from '../Login/Login';
 import Register from '../Register/Register';
 import Details from '../Details/Details';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
-import Mentors from '../Mentors/Mentors';
+import Doctors from '../Doctors/Doctors';
 
 const router = createBrowserRouter([
     {
@@ -18,8 +18,9 @@ const router = createBrowserRouter([
                 loader: () => fetch('/event.json')
             },
             {
-                path:"/mentors",
-                element:<Mentors></Mentors>,
+                path:"/doctors",
+                element:<Doctors></Doctors>,
+                loader:() => fetch('/doctor.json')
             },
             {
                 path: "/details/:id",
