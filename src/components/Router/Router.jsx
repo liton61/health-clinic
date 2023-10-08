@@ -1,11 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Root from '../Root/Root';
 import Home from '../Home/Home';
-import About from '../About/About';
-import Career from '../Career/Career';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
-import News from '../News/News';
+import Details from '../Details/Details';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Mentors from '../Mentors/Mentors';
 
 const router = createBrowserRouter([
     {
@@ -15,19 +15,16 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('news.json')
+                loader: () => fetch('/event.json')
             },
             {
-                path: "/news/:id",
-                element: <News></News>
+                path:"/mentors",
+                element:<Mentors></Mentors>,
             },
             {
-                path: "/about",
-                element: <About></About>,
-            },
-            {
-                path: "/career",
-                element: <Career></Career>
+                path: "/details/:id",
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader:() => fetch('/event.json')
             },
             {
                 path: "/login",

@@ -1,21 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useContext } from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
 import { AuthContext } from '../Provider/AuthProvider';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext)
+    const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    // console.log(location);
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         signIn(email, password)
             .then(res => console.log(res))
+
+        navigate(location?.state ? location.state : '/')
+
             .catch(error => console.log(error))
     }
     return (
         <div>
-            <Navbar></Navbar>
             <div className="bg-gray-100 flex items-center justify-center h-screen">
                 <div className="bg-white w-96 p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Login</h2>

@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Register = () => {
@@ -15,7 +14,6 @@ const Register = () => {
     }
     return (
         <div>
-            <Navbar></Navbar>
             <div className="bg-gray-100 flex items-center justify-center h-screen">
                 <div className="bg-white w-96 p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Register</h2>

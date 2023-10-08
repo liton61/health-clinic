@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Digital Marketing",
+        "image": "https://i.postimg.cc/3xbtyZPy/01.jpg",
+        "price": "$99",
+        "short_description": "Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication...",
+        "button": "See Details"
+    },
+    {
+        "id": 2,
+        "name": "Graphic Design",
+        "image": "https://i.postimg.cc/90ppcPdQ/02.jpg",
+        "price": "$95",
+        "short_description": "Graphic design is the practice of composing and arranging the visual elements of a project. Designing the layout of a magazine, creating a poster for a theatre performance, and designing...",
+        "button": "See Details"
+    },
+    {
+        "id": 3,
+        "name": "Video Editing",
+        "image": "https://i.postimg.cc/508gRWjv/03.webp",
+        "price": "$100",
+        "short_description": "Video editing is important because it is the key to blending images and sounds to make us feel emotionally connected and sometimes truly there in the film we're watching...",
+        "button": "See Details"
+    },
+    {
+        "id": 4,
+        "name": "MERN Stack",
+        "image": "https://i.postimg.cc/BvrNpnZ4/04.jpg",
+        "price": "$117",
+        "short_description": "The MERN stack has several benefits, including managing client data, estimates, job production, scheduling, order fulfillment, shipment, invoicing, and finance, among others, all from a single application..",
+        "button": "See Details"
+    },
+    {
+        "id": 5,
+        "name": "PHP with Laravel",
+        "image": "https://i.postimg.cc/59qp5JhW/05.jpg",
+        "price": "$105",
+        "short_description": "Laravel is a free and open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and...",
+        "button": "See Details"
+    },
+    {
+        "id": 6,
+        "name": "Python with Django",
+        "image": "https://i.postimg.cc/SRqd01zP/06.jpg",
+        "price": "$129",
+        "short_description": "Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization...",
+        "button": "See Details"
+    }
+]
