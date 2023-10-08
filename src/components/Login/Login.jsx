@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -8,31 +8,47 @@ const Login = () => {
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+    const [errorMessage, setErrorMessage] = useState('');
+
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         const from = location.state?.from?.pathname || "/";
 
-        signIn(email, password)
-            .then((result) => {
-                const signIn = result.user;
-                if (signIn) {
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'success',
-                        title: 'Your have successfully login !',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
-                    navigate(from, { replace: true });
-                }
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+        if (!email.match(emailRegex)) {
+            setErrorMessage('Invalid email format. Please enter a valid email address.');
+            return;
+        }
+
+        signIn(email, password)
+            .then(() => {
+                setErrorMessage('');
+
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'You have successfully logged in!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+                navigate(from, { replace: true });
             })
-            .catch((err) => {
-                console.log(err.message);
+            .catch((error) => {
+                if (error.code === 'auth/invalid-login-credentials') {
+                    setErrorMessage("Password doesn't match !");
+                } else if (error.code === 'auth/user-not-found') {
+                    setErrorMessage('Email not registered. Please sign up.');
+                } else {
+                    console.error(error);
+                }
             });
-    }
+    };
+
     return (
         <div>
             <div className="bg-gray-100 flex items-center justify-center h-screen">
@@ -47,6 +63,9 @@ const Login = () => {
                             <label className="block text-gray-600 text-sm font-medium mb-2">Password</label>
                             <input type="password" id="password" name="password" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter your password" required />
                         </div>
+                        {errorMessage && (
+                            <div className="mb-4 text-red-500 text-sm">{errorMessage}</div>
+                        )}
                         <div className="mb-6">
                             <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
                         </div>

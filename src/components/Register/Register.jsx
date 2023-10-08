@@ -23,21 +23,21 @@ const Register = () => {
             });
         }
 
-        if (/[A-Z]/.test(password)) {
+        if (!/[A-Z]/.test(password)) {
             return Swal.fire({
                 position: 'top-end',
                 icon: 'error',
-                title: 'Password must not contain capital letters !',
+                title: 'Password must contain capital letters !',
                 showConfirmButton: false,
                 timer: 1500
             });
         }
 
-        if (/[^A-Za-z0-9]/.test(password)) {
+        if (!/[^A-Za-z0-9]/.test(password)) {
             return Swal.fire({
                 position: 'top-end',
                 icon: 'error',
-                title: 'Password must not contain special characters !',
+                title: 'Password must contain special characters !',
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -49,7 +49,7 @@ const Register = () => {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'You have successfully registered!',
+                    title: 'You have successfully registered !',
                     showConfirmButton: false,
                     timer: 1500
                 });
