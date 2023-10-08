@@ -2,22 +2,36 @@
 import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    // console.log(location);
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        const from = location.state?.from?.pathname || "/";
+
         signIn(email, password)
-            .then(res => console.log(res))
+            .then((result) => {
+                const signIn = result.user;
+                if (signIn) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Your have successfully login !',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    navigate(from, { replace: true });
+                }
 
-        navigate(location?.state ? location.state : '/')
-
-            .catch(error => console.log(error))
+            })
+            .catch((err) => {
+                console.log(err.message);
+            });
     }
     return (
         <div>

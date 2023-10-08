@@ -21,6 +21,7 @@
         "name" : "Dr. Shane Wood",
         "time": "10:00 am - 03:00 pm",
         "designation": "Surgery(Surgery Clinic)",
+        "contact" : "017XXXXXXX",
         "short_description": "Surgery is a medical marvel, a blend of science and skill, offering the potential to heal and transform lives. Whether it's a life-saving procedure, a cosmetic enhancement...",
         "button": "See Details"
     },
@@ -33,6 +34,7 @@
         "name" : "Dr. David Thome",
         "time": "11:00 am - 04:00 pm",
         "designation": "Orthopedics (Fracture Center)",
+        "contact" : "017XXXXXXX",
         "short_description": "Orthopedics is a specialized field of medicine dedicated to the diagnosis, treatment, and prevention of disorders related to the musculoskeletal system. This system includes bones...",
         "button": "See Details"
     },
@@ -45,6 +47,7 @@
         "name" : "Dr. Micheal Bone",
         "time": "12:00 pm - 05:00 pm",
         "designation": "Nutrition & Health(Health Care)",
+        "contact" : "017XXXXXXX",
         "short_description": "Nutrition plays a pivotal role in maintaining and promoting good health. It encompasses the consumption of a balanced diet that provides essential nutrients like vitamins...",
         "button": "See Details"
     },
@@ -57,6 +60,7 @@
         "name" : "Dr. Nick Ann",
         "time": "01:00 pm - 06:00 pm",
         "designation": "Dentist(Dental Care)",
+        "contact" : "017XXXXXXX",
         "short_description": "Dentists are healthcare professionals who specialize in the diagnosis, treatment, and prevention of oral health issues. They play a crucial role in maintaining the health of teeth...",
         "button": "See Details"
     },
@@ -69,6 +73,7 @@
         "name" : "Dr. Luna been",
         "time": "02:00 pm - 07:00 pm",
         "designation": "Dermatologist (CMT Hospital)",
+        "contact" : "017XXXXXXX",
         "short_description": "A dermatologist is a medical doctor who specializes in the diagnosis, treatment, and prevention of conditions and diseases related to the skin, hair, nails, and mucous membranes...",
         "button": "See Details"
     }
