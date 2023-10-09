@@ -1,9 +1,10 @@
 import { useContext } from 'react';
-import userLogo from '../../assets/user.png'
+// import userLogo from '../../assets/user.png'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import logo from '../../../public/logo.png';
 import { NavLink } from "react-router-dom";
+import profile from '../../assets/profile.jpg'
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -96,7 +97,7 @@ const Navbar = () => {
                 {
                     user ?
                         <div className='flex'>
-                            <img className='w-12 mr-3' src={userLogo} alt="" />
+                            <img className='w-12 mr-3 rounded-full h-12' src={profile} alt="" />
                             <Link onClick={handleSingOut} to="/login" className="btn btn-active btn-neutral text-lg">Sign Out</Link>
                         </div>
                         :

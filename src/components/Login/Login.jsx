@@ -4,6 +4,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import google from '../../assets/google.jpg';
 
 
 const Login = () => {
@@ -83,8 +84,8 @@ const Login = () => {
                         <div className="mb-6">
                             <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
                         </div>
-                        <div className="mb-6">
-                            <button onClick={googleLogin} type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Google</button>
+                        <div className="mb-6 flex justify-center items-center">
+                            <img onClick={googleLogin} className='w-16 h-16 rounded-full cursor-pointer' src={google} alt="" />
                         </div>
                     </form>
                     <p className="text-gray-600 text-sm text-center">Don't have an account? <a href="/register" className="text-blue-500">Register</a></p>
