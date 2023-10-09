@@ -34,6 +34,14 @@ const Navbar = () => {
                         >
                             Doctors
                         </NavLink></li>
+                        <li className='mx-2'><NavLink
+                            to="/nurses"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                        >
+                            Nurses
+                        </NavLink></li>
                         {/* <li className='mx-2'><NavLink
                             to="/register"
                             className={({ isActive, isPending }) =>

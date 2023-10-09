@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Midwife Alice",
+        "img": "https://i.postimg.cc/FH4BN0cq/01.webp",
+        "designation": "Certified Nurse-Midwife"
+    },
+    {
+        "id": 2,
+        "name": "Midwife Bob",
+        "img": "https://i.postimg.cc/1XFvZzzs/02.jpg",
+        "designation": "Registered Midwife"
+    },
+    {
+        "id": 3,
+        "name": "Midwife Carol",
+        "img": "https://i.postimg.cc/Kzw0VTx0/03.jpg",
+        "designation": "Licensed Midwife"
+    },
+    {
+        "id": 4,
+        "name": "Midwife David",
+        "img": "https://i.postimg.cc/7YD3L9sg/04.webp",
+        "designation": "Nurse Midwife Practitioner"
+    },
+    {
+        "id": 5,
+        "name": "Midwife Emily",
+        "img": "https://i.postimg.cc/cHRKyyNP/05.jpg",
+        "designation": "Certified Professional Midwife"
+    },
+    {
+        "id": 6,
+        "name": "Midwife Frank",
+        "img": "https://i.postimg.cc/5tP7BGGd/06.jpg",
+        "designation": "Maternity Nurse"
+    }
+]
