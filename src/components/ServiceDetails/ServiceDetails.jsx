@@ -5,8 +5,8 @@ const ServiceDetails = ({ detail }) => {
     const { id, title, name, fee, time, contact, button, short_description, image, designation } = detail || {};
     return (
         <div>
-            <h1 className="text-center mt-5 text-4xl font-bold border-b-4 border-indigo-500 w-72 mx-auto">Service Details</h1>
-            <div className="flex justify-center items-center h-[60vh]">
+            <h1 className="text-center mt-5 mb-10 text-4xl font-bold border-b-4 border-indigo-500 w-72 mx-auto">Service Details</h1>
+            <div className="flex justify-center items-center w-full h-full px-2">
                 <div class="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                         <img

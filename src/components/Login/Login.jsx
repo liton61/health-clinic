@@ -54,8 +54,9 @@ const Login = () => {
                 navigate(from, { replace: true });
             })
             .catch((error) => {
+                console.log(error.code)
                 if (error.code === 'auth/invalid-login-credentials') {
-                    setErrorMessage("Password doesn't match !");
+                    setErrorMessage("Invalid email or password !");
                 } else if (error.code === 'auth/user-not-found') {
                     setErrorMessage('Email not registered. Please sign up.');
                 } else {
