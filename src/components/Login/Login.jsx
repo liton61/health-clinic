@@ -9,12 +9,15 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 const Login = () => {
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
+
     const googleLogin = () => {
         signInWithPopup(auth, provider)
-            .then(res => console.log(res))
-            .catch(error => console.log(error))
+            .then((result) => {
+                console.log(result);
+                window.location.href = '/';
+            })
+            .catch((error) => console.log(error))
     }
-
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
