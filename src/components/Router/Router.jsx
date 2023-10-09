@@ -8,6 +8,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Doctors from '../Doctors/Doctors';
 import Nurses from '../Nurses/Nurses';
 import Error from '../Error/Error';
+import Midwives from '../Midwives/Midwives';
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
                 path: "/nurses",
                 element: <PrivateRoute><Nurses></Nurses></PrivateRoute>,
                 loader: () => fetch('/nurse.json')
+            },
+            {
+                path: "/midwives",
+                element: <PrivateRoute><Midwives></Midwives></PrivateRoute>,
+                loader: () => fetch('/midwife.json')
             },
             {
                 path: "/details/:id",
