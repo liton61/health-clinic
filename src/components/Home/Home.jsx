@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import { useLoaderData } from 'react-router-dom';
 import Services from '../Services/Services';
+import Gallery from '../Gallery/Gallery';
 
 const Home = () => {
     const loadData = useLoaderData();
@@ -15,6 +16,7 @@ const Home = () => {
                     loadData.map(eventData => <Services key={eventData.id} data={eventData}></Services>)
                 }
             </div>
+            <Gallery></Gallery>
         </div>
     );
 };
