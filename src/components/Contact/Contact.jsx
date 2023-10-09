@@ -9,21 +9,21 @@ const Contact = () => {
                 <div className="bg-white rounded-lg shadow-lg p-6 m-4">
                     <h2 className="text-2xl font-semibold mb-2">John Doe</h2>
                     <p className="text-gray-600 font-semibold text-sm mb-2">Receptionist</p>
-                    <p className="text-gray-600 font-semibold text-sm mb-4">Phone: (123) 456-7890</p>
+                    <p className="text-gray-600 font-semibold text-sm mb-2">Phone: (123) 456-7890</p>
                     <p className="text-gray-600 font-semibold text-sm">Address: 123 Main Street, City, Country</p>
                 </div>
 
                 <div className="bg-white rounded-lg shadow-lg p-6 m-4">
                     <h2 className="text-2xl font-semibold mb-2">Jane Smith</h2>
                     <p className="text-gray-600 font-semibold text-sm mb-2">Receptionist</p>
-                    <p className="text-gray-600 font-semibold text-sm mb-4">Phone: (987) 654-3210</p>
+                    <p className="text-gray-600 font-semibold text-sm mb-2">Phone: (987) 654-3210</p>
                     <p className="text-gray-600 font-semibold text-sm">Address: 123 Main Street, City, Country</p>
                 </div>
 
                 <div className="bg-white rounded-lg shadow-lg p-6 m-4">
                     <h2 className="text-2xl font-semibold mb-2">Bob Johnson</h2>
                     <p className="text-gray-600 font-semibold text-sm mb-2">Receptionist</p>
-                    <p className="text-gray-600 font-semibold text-sm mb-4">Phone: (555) 123-4567</p>
+                    <p className="text-gray-600 font-semibold text-sm mb-2">Phone: (555) 123-4567</p>
                     <p className="text-gray-600 font-semibold text-sm">Address: 123 Main Street, City, Country</p>
                 </div>
             </div>

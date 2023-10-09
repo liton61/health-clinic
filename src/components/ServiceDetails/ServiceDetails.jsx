@@ -30,6 +30,9 @@ const ServiceDetails = ({ detail }) => {
                             </div>
                             <div>
                                 <h6 class="block font-sans text-sm font-semibold leading-relaxed tracking-normal text-pink-500 antialiased">
+                                    Time
+                                </h6>
+                                <h6 class="block font-sans text-sm font-semibold leading-relaxed tracking-normal text-pink-500 antialiased">
                                     {time}
                                 </h6>
                                 <h6 class="mb-4 block font-sans text-sm font-semibold leading-relaxed tracking-normal text-pink-500 antialiased">
