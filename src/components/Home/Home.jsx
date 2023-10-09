@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import { useLoaderData } from 'react-router-dom';
 import Services from '../Services/Services';
 import Gallery from '../Gallery/Gallery';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     const loadData = useLoaderData();
@@ -17,6 +18,7 @@ const Home = () => {
                 }
             </div>
             <Gallery></Gallery>
+            <Contact></Contact>
         </div>
     );
 };
