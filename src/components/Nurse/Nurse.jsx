@@ -2,7 +2,7 @@
 const Nurse = ({ nurse }) => {
     const { name, img, designation } = nurse;
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div className="relative mx-auto flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <img src={img} alt="profile-picture" />

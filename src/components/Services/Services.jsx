@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Services = ({ data }) => {
     const { id, title, fee, rating, name, price, button, short_description, image } = data;
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div className="relative flex w-96 mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <img src={image} alt="profile-picture" />
